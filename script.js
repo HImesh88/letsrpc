@@ -9,12 +9,15 @@ function botPlayer() {
 }
 
 function win() {
+    gameres.classList.remove('hidden')
     gameres.textContent="Wow !! You won"
 }
 function loose() {
+    gameres.classList.remove('hidden')
     gameres.textContent="Oops!! You loosed"
 }
 function draw() {
+    gameres.classList.remove('hidden')
     gameres.textContent="It's a Draw"
 }
 
@@ -31,19 +34,19 @@ function checkResult() {
 
     if (you === bot) {
        setTimeout(draw,2000)
-       gameres.textContent=""
+       gameres.classList.add('hidden')
     } else if (you === "🪨" && bot === "✂️") {
         setTimeout(win,2000)
-        gameres.textContent=""
+        gameres.classList.add('hidden')
     } else if (you === "✂️" && bot === "🧻") {
         setTimeout(win,2000)
-        gameres.textContent=""
+        gameres.classList.add('hidden')
     } else if (you === "🧻" && bot === "🪨") {
         setTimeout(win,2000)
-        gameres.textContent=""
+        gameres.classList.add('hidden')
     } else {
         setTimeout(loose,2000)
-        gameres.textContent=""
+        gameres.classList.add('hidden')
     }
 }
 
