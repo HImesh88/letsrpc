@@ -3,7 +3,7 @@ const you_player = document.getElementById('you-player');
 const gameres = document.getElementById('game_res')
 
 function botPlayer() {
-    let rpcarr = ["🪨", "🧻", "✂️"];
+    let rpcarr = ["🪨", "🧻", "✂️"]
     const ran = Math.floor(Math.random() * rpcarr.length);
     bot_player.textContent = rpcarr[ran];
 }
