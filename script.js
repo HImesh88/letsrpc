@@ -1,6 +1,10 @@
 const bot_player = document.getElementById('bot-player');
 const you_player = document.getElementById('you-player');
 const gameres = document.getElementById('game_res')
+const botscore = document.getElementById('botscore')
+const youscore = document.getElementById('youscore')
+let score=1;
+let bscore = 1;
 
 function botPlayer() {
     let rpcarr = ["🪨", "🧻", "✂️"]
@@ -11,10 +15,14 @@ function botPlayer() {
 function win() {
     gameres.classList.remove('hidden')
     gameres.textContent="Wow !! You won"
+    youscore.textContent = score;
+    score++;
 }
 function loose() {
     gameres.classList.remove('hidden')
     gameres.textContent="Oops!! You loosed"
+    botscore.textContent = bscore;
+    bscore++;
 }
 function draw() {
     gameres.classList.remove('hidden')

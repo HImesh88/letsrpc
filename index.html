@@ -12,16 +12,16 @@
   <main class="text-center space-y-8 bg-gray-900">
     <h1 class="text-5xl font-extrabold text-emerald-400 tracking-wide uppercase drop-shadow-lg">Dhunga Kagaz ra Kaichi !!</h1>
     <div class="text-white text-2xl absolute top-[100px] bg-gray-900 px-4 py-1 rounded-xl hidden" id="game_res"></div>
-    <div class="w-[50%] h-[50%] flex rounded-xl overflow-hidden">
-         <div class="w-[50%] h-full bg-indigo-900 flex flex-col justify-between items-center">
-              <h1 class="px-6 font-bold mt-10 rounded-xl bg-fuchsia-400">Bot</h1>
-              <h1 class="mb-[125px] text-6xl animate-bounce" id="bot-player"></h1>
-         </div>
-         <div class="w-[50%] h-full bg-fuchsia-800 flex flex-col justify-between items-center">
-              <h1 class="px-6 font-bold mt-10 rounded-xl bg-fuchsia-400">You</h1>
-              <h1 class="mb-[125px] text-6xl animate-bounce" id="you-player"></h1>
-         </div>
-    </div>
+        <div class="w-[50%] h-[50%] flex rounded-xl overflow-hidden">
+             <div class="w-[50%] h-full bg-indigo-900 flex flex-col justify-between items-center">
+                  <h1 class="px-6 font-bold mt-10 rounded-xl bg-fuchsia-400 flex items-center">Bot-<div id="botscore" class="text-md font-bold"></div></h1>
+                  <h1 class="mb-[125px] text-6xl animate-bounce" id="bot-player"></h1>
+             </div>
+             <div class="w-[50%] h-full bg-fuchsia-800 flex flex-col justify-between items-center">
+                  <h1 class="px-6 font-bold mt-10 rounded-xl bg-fuchsia-400 flex items-center">You-<div id="youscore" class="text-md font-bold"></div></h1>
+                  <h1 class="mb-[125px] text-6xl animate-bounce" id="you-player"></h1>
+             </div>
+        </div>
     <div class="flex gap-8 justify-center">
       <div class="w-32 h-16 bg-red-400 rounded-xl flex items-center justify-center text-xl font-semibold hover:scale-110 transition-transform cursor-pointer shadow-lg" class="btn" id="btn_r">Rock ✊</div>
       <div class="w-32 h-16 bg-blue-400 rounded-xl flex items-center justify-center text-xl font-semibold hover:scale-110 transition-transform cursor-pointer shadow-lg" class="btn" id="btn_p">Paper ✋</div>
