@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhunga Kagaz ra Kaichii</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center gap-10">
+  <main class="text-center space-y-8 bg-gray-900">
+    <h1 class="text-5xl font-extrabold text-emerald-400 tracking-wide uppercase drop-shadow-lg">Dhunga Kagaz ra Kaichi !!</h1>
+    <div class="text-white text-2xl absolute top-[80px]" id="game_res"></div>
+    <div class="w-[50%] h-[50%] flex rounded-xl overflow-hidden">
+         <div class="w-[50%] h-full bg-indigo-900 flex flex-col justify-between items-center">
+              <h1 class="px-6 font-bold mt-10 rounded-xl bg-fuchsia-400">Bot</h1>
+              <h1 class="mb-[125px] text-6xl animate-bounce" id="bot-player"></h1>
+         </div>
+         <div class="w-[50%] h-full bg-fuchsia-800 flex flex-col justify-between items-center">
+              <h1 class="px-6 font-bold mt-10 rounded-xl bg-fuchsia-400">You</h1>
+              <h1 class="mb-[125px] text-6xl animate-bounce" id="you-player"></h1>
+         </div>
+    </div>
+    <div class="flex gap-8 justify-center">
+      <div class="w-32 h-16 bg-red-400 rounded-xl flex items-center justify-center text-xl font-semibold hover:scale-110 transition-transform cursor-pointer shadow-lg" class="btn" id="btn_r">Rock ✊</div>
+      <div class="w-32 h-16 bg-blue-400 rounded-xl flex items-center justify-center text-xl font-semibold hover:scale-110 transition-transform cursor-pointer shadow-lg" class="btn" id="btn_p">Paper ✋</div>
+      <div class="w-32 h-16 bg-yellow-400 rounded-xl flex items-center justify-center text-xl font-semibold hover:scale-110 transition-transform cursor-pointer shadow-lg" class="btn" id="btn_s">Scissors ✌️</div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
